@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            height: 6.5in;
+            gap: 5px;
+        }
+        .box{
+            background-color: rgb(235, 235, 37);
+            padding: 10px;
+        }
+        #nav{
+            grid-row-start: 1;
+            grid-row-end: max;
+        }
+        #header{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: max;
+        } 
+        #footer{
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: -5;
+            grid-column-end: max;
+        }
+        #ads{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+        #article{
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class ="box" id="nav">Nav</div>
+    <div class ="box">Header</div>
+    <div class ="box">Article</div>
+    <div class ="box" id="footer">Footer</div>
+    <div class="box" id="ads">Ads</div>
+    </div>
+
+
+
+</body>
+</html>

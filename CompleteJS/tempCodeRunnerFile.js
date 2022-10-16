@@ -1,0 +1,1 @@
+console.log(str.substr(-4));

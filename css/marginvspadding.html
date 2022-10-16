@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARGIN VS PADDING</title>
+    <style>
+        .box1,.box2{
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        .box1{
+            margin: 30px;
+            background-color: blue;
+        }
+
+        .box2{
+            padding: 30px;
+            background-color: aquamarine;
+        }
+        .wrapper{
+            background-color: blueviolet;
+        }
+        nav a{
+            color: red;
+            text-decoration: none;
+            text-align: center;
+            padding: 30px;
+            float: left;
+        }
+        nav{
+            background-color: aqua;
+            overflow: hidden;
+            font-size: 30px;
+        }
+        nav,:hover{
+            color: blueviolet;
+        }
+
+        nav :visited{
+            color: black;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+    </div>
+</br>
+</br>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Study</a>
+        <a href="#">Email</a>
+    </nav>
+</body>
+</html>

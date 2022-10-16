@@ -1,0 +1,37 @@
+<!-- // 👉 The DOM is the Document Object Model, which deals with the document, 
+// the HTML elements themselves, e.g. document and all traversal you 
+// would do in it, events, etc.
+
+// For Ex: 👨‍🏫
+// change the background color to red
+// document.body.style.background = "red";
+
+
+// 👉 The BOM is the Browser Object Model, which deals with browser components 
+// aside from the document, like history, location, navigator and screen 
+// (as well as some others that vary by browser). OR 
+// In simple meaning all the Window operations which comes under BOM are performed 
+// usign BOM  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class = "btn" onclick="goBack()">Go Back</button>
+    <p>NOtice that clicking on the Back Button here will redirect you to the previous page</p>
+
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+
+    </script>
+</body>
+</html>

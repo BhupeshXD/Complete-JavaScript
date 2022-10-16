@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para" > Hi this is Bhupesh</p>
+    <p class="para" > Hi this is Anagha</p>
+    <div class="overview">
+    <div class="child-one">
+        <p>I am child-one</p>
+    </div>
+    <div class="child-two">
+        <p>I am child-two</p>
+    </div>
+    <h1 id="child-three">
+        <p>I am third-one</p>
+   </h1>
+
+
+    <button onclick="changeContent()">CLick Me</button>
+
+    <script>
+    const changeContent = () => {
+        //     document.getElementById("child-three").innerHTML="Welcome the Thapa Technical"
+            
+
+        // by taking the reference headline is the object here
+
+//  const headingchange = document.getElementById("child-three");
+//  headingchange.innerHTML="Welcome Bhupesh";
+
+//   // by class name
+// console.log(document.getElementsByClassName("para"));
+
+//console.log(document.getElementsByTagName("child-two"));
+// document.querySelector('.para').innerHTML = "I AM bHUPESH";
+document.querySelector('#third-one').innerHTML = "I AM bHUPESH";
+         }
+         </script>
+</body>
+</html>
+
+<!-- elements taht has child node
+
+document.body.hasChildNodes()
+
+Practice time
+
+how to find child in Dom tree?
+
+document.body.children
+
+document.body.firstChild // this will include all whitescape and text too
+// if dont wwant anyrhing and direct child element than
+
+document.body.firstElementChild // main div part
+
+can go more further by
+document.body.firstElementChild.firstElementChild
+
+
+const childTwo = document.querySelector('.child-two');
+childTwo
+
+childTwo.style.color = 'white';
+
+
+
+
+
+
+//  for finding parent now
+
+
+document.body.parentNode
+html is the parent of body
+
+
+document.body.parentElement
+//html is there parent
+
+document.head.parentElement
+// op will be same html
+
+
+/// finding sibling in html document
+
+sibling of body
+
+document.body.nextSibling
+// null 
+because first come head than body and we dont have any siblig next to body
+
+document.body.previousSibling
+// text
+head part will be come as #text
+
+document.body.previousElementSibling
+// head tag
+direct element will be printed 
+
+
+
+
+//similar will happen with head to if we replaced the document.body.nextSibling to document.head.nextSibling
+ 
+
+
+
+How to search the elments and the references 
+  -->
+
+
+What is getElementById()?
+
+returns a refernce to the element by its ID.
+if the element with specifed ID is not in the document it will return null
+
+
+what is querySelector()?
+
+element= document.querySelector(selector)
+
+returns the first element within the document that matches the  specified group of selectors or null if no matches are found.
+
+

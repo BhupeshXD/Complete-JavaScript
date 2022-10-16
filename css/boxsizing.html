@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 350px;
+            height: 280px;
+            padding: 20px;
+            border: 15px solid red;
+            background-color: yellow;
+        }
+        .content-box{
+            /* Total width : 350px+(2*20px)+(2*15px)=420px;
+            Total height : 80px+(2*20px)+(2*15px)= 150px; */
+        }
+        .border-box{
+            /* Total width : 350px-(2*20px)-(2*15px)= 270px;
+            Total height : 80px-(2*20px)-(2*15px)= 10px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">Content Box</div>
+</body>
+</html>
