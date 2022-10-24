@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML Events</h2>
+    <button onclick="alert('Hi this is Bhupesh')">Click Me for alert</button>
+   <br> <button onclick="callingFunction()">By Calling Function</button>
+
+   <div class="button_su">
+    <span class="su_button_circle"></span>
+    <a href="#" class="button_su_inner">
+    <span class="button_text_container" id="thirdWay">Inline event</span></a> </div>
+
+    <div class="button_su1">
+        <span class="su_button_circle1"></span>
+        <a href="#" class="button_su_inner1">
+        <span class="button_text_container1" id="fourthWay">addEventListener</span></a> </div>
+</body>
+<script>
+    
+
+    // second way of writing function in events
+    const callingFunction = () => {
+        alert('most common way of writing functions')
+    }
+
+
+    // 3rd way of writing functions
+
+    const thirdWay = document.getElementById('thirdWay');
+    thirdWay.onclick = function(){
+        alert("most common way of writing functions again")
+    }
+
+    // 4th way of writing functions
+    const fourthWay = document.querySelector('#fourthWay');
+    fourthWay.addEventListener('click',()=>{
+        alert("most recent way writing functions")
+    });
+
+</script>
+</html>
