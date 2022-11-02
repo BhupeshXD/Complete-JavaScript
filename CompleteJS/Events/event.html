@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,8 @@
         <span class="su_button_circle1"></span>
         <a href="#" class="button_su_inner1">
         <span class="button_text_container1" id="fourthWay">addEventListener</span></a> </div>
-</body>
-<script>
+
+        <script>
     
 
     // second way of writing function in events
@@ -44,4 +44,87 @@
     });
 
 </script>
+</body>
+
 </html>
+  <!--  addEventListener can be used to do different operations using same function name   -->
+
+
+<!-- as it cannot be done in function calling --> 
+
+
+<!-- Event Object-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Objects</h1>
+    <button onclick="">EventListener</button>
+
+</body>
+</html> -->
+
+
+
+<!-- mouseevent -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseevent</title>
+    <style>
+        
+        .main-div{
+            width: 100px;
+            height: 100px;
+            display: grid;
+            place-items: center;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+    Click the text ! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red, The mouseUp() function is triggered when the mouse button is released, and sets the color to the text to green.</p> -->
+        <div class="main-div">
+            <div id="box"></div>
+        </div>
+    <script>
+        // function mouseDown() {
+        //     document.getElementById("myID").style.color = "yellow";
+        // }
+
+        // function mouseUp() {
+        //     document.getElementById("myP").style.color = "red";
+        // }
+
+        const enter = document.getElementById("box");
+
+        enter.addEventListener(mouseenter,()=>{
+            enter.backgroundColor = "red";
+            console.log("M ouse entered");
+        });
+            
+        enter.addEventListener(mouseleave,()=>{
+            enter.backgroundColor = "blue";
+            console.log("Mouse out");
+        });
+
+    </script>
+</body>
+</html>
+

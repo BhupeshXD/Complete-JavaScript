@@ -18,5 +18,13 @@
 
 
 // what is event object?
+//  Event Object is parent object of event object
 
+//  for Eg
+//  MouseEvent, FocusEvent, KeyboardEvent etc
+
+
+
+// MouseEvent
+// events happens from the interaction of Mouse is called as mousevent
 
