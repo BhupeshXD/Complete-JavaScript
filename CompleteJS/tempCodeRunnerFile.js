@@ -1,1 +1,3 @@
-console.log(str.substr(-4));
+friends.forEach((element, index, array) => {
+    console.log(element + " index : "+ index + " " + array);  
+});
