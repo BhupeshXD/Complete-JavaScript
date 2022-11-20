@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>BOX-EXAMPLE</title>
+ </head>
+ <style>
+ #parentId {
+    width: 600px;
+    height: 600px;
+    background: rgb(167, 167, 230);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+#parentId #childId{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 25%;
+    background: rgb(30, 78, 30);
+    cursor: pointer;
+}
+ </style>
+ <body>
+    <div id="parentId">
+      <div id="childId"></div>
+     </div>
+ </body>
+
+ <script>
+const parentId = document.getElementById('parentId');
+const childId = document.getElementById('childId');
+
+const parentCall = ()=>{
+    alert('ParentId Div Call');
+    console.log('Parent Div Call'); 
+}
+
+const childCall =()=>{
+    alert('Child Div Call');
+    console.log('Child Div Call');
+    // event.stopPropagation();
+    // if we use above than it will only call child one and exit
+}
+
+parentId.addEventListener('click',parentCall);
+childId.addEventListener('click',childCall);
+
+// if nothing is done and aur said than default me event bubbling is used because first it will go for inner most div and than others
+
+</script>
+</html>
