@@ -24,6 +24,7 @@ const calculator = (num1, num2, operator)=>{
 }
 
 // here calculator is an higher order function 
+// because wo dusre function ko as a argument accept kar raha hai thats why HOF...
 
 console.log(calculator(5,2,add));
 
@@ -35,4 +36,10 @@ console.log(calculator(5,2,add));
 
 // A callback function is a function that is passed as an argument to another function, to be called back at a later time 
 
-// Jis bhi function ko hum kisi or function ke under as an argument pass karte hai then usko hum callback functiion bolte hai 
+// Jis bhi function ko hum kisi or function ke under as an argument pass karte hai then usko hum callback function bolte hai 
+
+
+
+
+
+
