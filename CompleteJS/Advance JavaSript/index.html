@@ -46,10 +46,18 @@ const childCall =()=>{
     // if we use above than it will only call child one and exit
 }
 
-parentId.addEventListener('click',parentCall);
-childId.addEventListener('click',childCall);
+parentId.addEventListener('click',parentCall, true);
+childId.addEventListener('click',childCall, true);
 
 // if nothing is done and aur said than default me event bubbling is used because first it will go for inner most div and than others
+
+
+// note in calling most imp for wether we have to do bubbling or capturing is upto us so if 
+
+
+// we use true than capturing will take place outer most to inner most 
+
+// we use false or it it default too bubling will take place inner most to outer most..
 
 </script>
 </html>
