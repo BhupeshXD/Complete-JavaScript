@@ -46,8 +46,8 @@ const childCall =()=>{
     // if we use above than it will only call child one and exit
 }
 
-parentId.addEventListener('click',parentCall, true);
-childId.addEventListener('click',childCall, true);
+parentId.addEventListener('click',parentCall, false);
+childId.addEventListener('click',childCall, false);
 
 // if nothing is done and aur said than default me event bubbling is used because first it will go for inner most div and than others
 
