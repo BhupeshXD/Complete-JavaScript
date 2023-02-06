@@ -108,7 +108,7 @@
 // console.log(table + "*" +num+ "="+ table*num);
 // }
 
-var table = 9;
-for(var num=1; num<=10; num++){
-   console.log(table + " * " +num+ " = "+ table*num);
-}
+// var table = 9;
+// for(var num=1; num<=10; num++){
+//    console.log(table + " * " +num+ " = "+ table*num);
+// }

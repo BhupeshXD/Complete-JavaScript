@@ -2,12 +2,14 @@
 
 // SIX DATA TYPES IN JAVASCRIPT
 
-// undefined 
-// Boolean
+// nn bb ss u
+// null
 // Number
-// String
+// Boolean
 // BigInt
+// String
 // Symbol
+// undefined
 
 // var myName = "Bhupesh Dhapola";
 // console.log(myName);
@@ -18,8 +20,12 @@
 // var iMBhu = true;
 // console.log(iMBhu);
 
-// // console.log(typeof(myName));
-// // console.log(typeof(myAge));
+// var num = 343.23
+// console.log(num);
+
+// console.log(typeof(myName));
+// console.log(typeof(myAge));
+// console.log(typeof(num));
 // console.log(typeof(iMBhu));
 
 
@@ -68,12 +74,22 @@
 
 // *********** NaN challenge time****************
 
-console.log(NaN === NaN);  //false if when we write triple time NaN false is printed..
-console.log(Number.NaN=== NaN); //false because we have put that the number is Not a number
+// console.log(NaN === NaN);  //false if when we write triple time NaN false is printed..
+// console.log(Number.NaN=== NaN); //false because we have put that the number is Not a number
 
-console.log(isNaN(NaN));  //because NaN is not a number and we are finding NaN so it is True
+// console.log(isNaN(NaN));  //because NaN is not a number and we are finding NaN so it is True
 
-console.log(isNaN(Number.NaN)); //true because number is NaN
+// console.log(isNaN(Number.NaN)); //true because number is NaN
 
-console.log(Number.isNaN(NaN)); //true becasue number is true and it is not a number..
+// console.log(Number.isNaN(NaN)); //true becasue number is true and it is not a number..
 
+// OBjects
+
+const item ={
+    name: "Bhupesh",
+    age: "25",
+    gender : "male",
+    address: "Bangalore",
+    eligible : true
+}
+console.log();

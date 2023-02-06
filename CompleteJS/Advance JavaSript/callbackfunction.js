@@ -1,6 +1,6 @@
 // Higher order Function
 
-// function hich takes another function as an arguments is called as Higher order function 
+// function which takes another function as an arguments is called as Higher order function 
 
 // wo function jo dusre  function ko as an argument accept karta hai usse Higher Order function bolte hai 
 

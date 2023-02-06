@@ -20,32 +20,32 @@ console.log('Outerscope '+mylastname);
 biodata();
 
 // let
-function biodata(){
-    let myfirstname = "Bhupesh";
-    console.log("Innerscope "+ myfirstname);
+// function biodata(){
+//     let myfirstname = "Bhupesh";
+//     console.log("Innerscope "+ myfirstname);
 
-if(true){
-    let mylastname = "Dhapola";
-    console.log("Innerscope "+ mylastname);
-    console.log("Innerscope "+ myfirstname);
-}
-console.log('Outerscope '+mylastname);  // error on this line because it is out of scope
-}
-biodata();
+// if(true){
+//     let mylastname = "Dhapola";
+//     console.log("Innerscope "+ mylastname);
+//     console.log("Innerscope "+ myfirstname);
+// }
+// console.log('Outerscope '+mylastname);  // error on this line because it is out of scope
+// }
+// biodata();
 
 
-//const
+// //const
 
-function biodata(){
-    const myfirstname = "Bhupesh";
-    console.log("Innerscope "+ myfirstname);
+// function biodata(){
+//     const myfirstname = "Bhupesh";
+//     console.log("Innerscope "+ myfirstname);
 
-if(true){
-    const mylastname = "Dhapola";
-    console.log("Innerscope "+ mylastname);
-    console.log("Innerscope "+ myfirstname);
-}
-console.log('Outerscope '+mylastname);  // error on this line because it is out of scope
-}
-biodata();
+// if(true){
+//     const mylastname = "Dhapola";
+//     console.log("Innerscope "+ mylastname);
+//     console.log("Innerscope "+ myfirstname);
+// }
+// console.log('Outerscope '+mylastname);  // error on this line because it is out of scope
+// }
+// biodata();
 
