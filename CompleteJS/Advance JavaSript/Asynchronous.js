@@ -64,3 +64,41 @@ function greet() {
 }
 
  
+// Synchronous js
+
+// agar do kaam kar rahe hai jab tak pahala kaam nahi hota dusra kaam nahi kar sakte
+
+// 1 work me 10 Min lag raha hai 2 work ko 5s isme jab tak first wala nahi hoga tabtak u cant go on second
+
+// const fun1 =()=>{
+//     console.log(`Function 1 is caled`);
+//     }
+//     const fun2 =()=>{
+//     console.log(`Function 2 is called`);
+//     fun1();
+//     console.log(`Function 1 is called again`);
+//     }
+//     fun2();
+
+
+//Aysnchronous js 
+
+// we dont have to wait sab ek sath kaam karta hai 
+
+// 1 work 10 m
+// 2 work 5s
+//  dono work ho jayege 5s wala ho jayega and 10m wala chalta rahega till not complete
+
+const fun1 =()=>{
+    setTimeout(() => {
+        console.log(`Function 1 is called`);
+    }, 2000);
+    }
+    const fun2 =()=>{
+    console.log(`Function 2 is called`);
+    fun1();
+    console.log(`Function 1 is called again`);
+    }
+    fun2();
+    
+
