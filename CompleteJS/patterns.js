@@ -50,7 +50,7 @@ for (let i = 1; i <= n; i++) {
   }
   // printing star
   for (let k = 0; k < i; k++) {
-    string += "*";
+    string += "*"; 
   }
   string += "\n";
 }
