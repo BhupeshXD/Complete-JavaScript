@@ -1,10 +1,15 @@
-var a = 4;
+const obj1 = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         let roll_no = [1,3,4,5,6];
+//         resolve(roll_no);
+//         },2000);
 
-// function greet() {
-//     b = 'hello';
-//     console.log(b); // hello
-//     var b;
-// }
+// });
 
-// greet(); // hello
-// console.log(b);
+// // note 
+// // we use then when resolve is used
+
+// //promise consume
+// obj1.then((roll_no)=>{
+// console.log(roll_no);
+// });
